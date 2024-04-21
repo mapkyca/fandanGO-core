@@ -20,7 +20,14 @@ This is the core plugin of the FandanGO application.
    conda create --name fandanGO python=3.12
    ```
 
-4. Create a launcher file, let's call it "fandanGO", with the following content (replace `/path/for/miniconda/` with the proper path):
+4. Activate environment and install the core (replace `/path/for/fandanGO-core` with the proper path):
+   ```
+   conda activate fandanGO
+   git clone https://github.com/I2PC/fandanGO-core.git
+   pip install -e /path/for/fandanGO-core
+   ```
+   
+5. Create a launcher file, let's call it "fandanGO", with the following content (replace `/path/for/miniconda/` with the proper path):
    ```
    #!/usr/bin/env python3
    import os
