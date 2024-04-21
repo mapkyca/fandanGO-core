@@ -56,7 +56,6 @@ def delegate_action_to_plugin():
             # define the extended arguments required by the plugin selected
             plugin_module.Plugin.define_args()
             extended_allowed_args = plugin_module.Plugin.get_args()[parsed_args.action]
-            print(extended_allowed_args)
 
             for arg_name, arg_info in extended_allowed_args.items():
                 if arg_name not in basic_allowed_args:
